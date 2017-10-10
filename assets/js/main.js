@@ -11,7 +11,7 @@ var spanToolText = document.getElementsByClassName('tooltiptext');
 
 
   function validateForm(){
-
+//nombre
     if (inputs[0].value == "" ){
         spanToolText[0].innerHTML="Don't accept empty fields";
         divTool[0].style.visibility="visible";
@@ -28,6 +28,7 @@ var spanToolText = document.getElementsByClassName('tooltiptext');
       spanToolText[0].style.visibility="hidden";
 
     }
+  //apellido
     if (inputs[1].value == ""){
         spanToolText[1].innerHTML="Don't accept empty fields";
         divTool[1].style.visibility="visible";
@@ -44,7 +45,7 @@ var spanToolText = document.getElementsByClassName('tooltiptext');
       spanToolText[1].style.visibility="hidden";
 
     }
-
+//email
     if (inputs[2].value == ""){
         spanToolText[2].innerHTML="Don't accept empty fields";
         divTool[2].style.visibility="visible";
@@ -61,6 +62,7 @@ var spanToolText = document.getElementsByClassName('tooltiptext');
       spanToolText[2].style.visibility="hidden";
 
     }
+  //contraseña
     if (inputs[3].value == "" ){
         spanToolText[3].innerHTML="Don't accept empty fields";
         divTool[3].style.visibility="visible";
@@ -76,7 +78,7 @@ var spanToolText = document.getElementsByClassName('tooltiptext');
       divTool[3].style.visibility="hidden";
       spanToolText[3].style.visibility="hidden";
     }
-
+//tipo de bici
     if (select[0].selectedIndex == 0){
       spanToolText[4].innerHTML="Choose a type of bike";
       divTool[4].style.visibility="visible";
@@ -89,6 +91,5 @@ var spanToolText = document.getElementsByClassName('tooltiptext');
 
     }
 
-
-
+  //fin function
   }
